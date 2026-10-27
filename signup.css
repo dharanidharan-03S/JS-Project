@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url("../JS%20project/image/backgroundimage1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0d0d0d;
+    padding-top: 40px;
+}
+.container{
+    padding: 30px;
+    height: 90%;
+    width: 30%;
+    border: 1px solid #C8F136;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.head{
+    display: flex;
+    gap: 20px;
+}
+.noteicon{
+    color: #C8F136;
+    font-size: 60px;
+}
+.title{
+    color: #C8F136;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.head2{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.head2 h2{
+    color: #C8F136;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.namediv{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    gap:10px;
+    margin-top:10px;
+}
+.icon{
+    position:absolute;
+    color:white;
+    font-size:25px;
+    top:10px;
+    left:10px;
+}
+.namelabel,.emaillabel,.passwordlabel,.confirmpasswordlabel{
+    color:white;
+    font-family: sans-serif;
+    font-size:16px;
+}
+.nameinput,.emailinput,.passwordinput,.confirmpasswordinput{
+    background:none;
+    outline:none;
+    height: 50px;
+    width:90%;
+    padding:10px;
+    padding-left:50px;
+    border:1px solid grey;;
+    border-radius:12px;
+    font-size:18px;
+    color:white;
+}
+.nameinput:focus,.emailinput:focus,.passwordinput:focus,.confirmpasswordinput:focus{
+    border: 1px solid #C8F136;
+}
+.signupbutton{
+    margin-top:20px;
+    background:none;
+    outline:none;
+    border: none;
+    height: 50px;
+    width:90%;
+    background-color:#C8F136;
+    border-radius:20px;
+    cursor:pointer;
+    font-size: 18px;
+}
+.login{
+    color:white;
+    text-align: center;
+    margin-top:20px;
+    font-family: sans-serif;
+}
+.link{
+    color: hsla(73, 87%, 58%, 1.00);
+    text-decoration:none;
+}
+.invalidemail,.invalidname,.invalidpassword,.invalidconfirmpassword{
+    color: #ff8080c1;;
+    font-family: sans-serif;
+    opacity: 0;
+}
+.visibleclass{
+    opacity: 1;
+}

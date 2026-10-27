@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="signup.css" rel="stylesheet"></link>
+    <script src="https://kit.fontawesome.com/646be5f4dc.js" crossorigin="anonymous"></script>
+    <script src="signup.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="head">
+                <i class="fa-solid fa-note-sticky noteicon"></i>
+                <h1 class="title">Notes Saver</h1>
+            </div>
+            <div class="head2">
+                <h2>Create Your Account</h2>
+            </div>
+            <form>
+                <div class="namediv">
+                    <i class="fa-regular fa-user icon"></i>
+                    <!-- <label for="name" class="namelabel">Full Name</label> -->
+                    <input id="name" type="text" class="nameinput" placeholder="Enter your name" required>
+                    <p class="invalidname">Values must be filled</p>
+                </div>
+                <div class="namediv">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <!-- <label for="email" class="emaillabel">Email</label> -->
+                    <input id="email" type="email" class="emailinput" placeholder="Enter your email" required>
+                    <p class="invalidemail">Values must be filled</p>
+                </div>
+                <div class="namediv">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <!-- <label for="password" class="passwordlabel">Password</label> -->
+                    <input id="password" type="password" class="passwordinput" placeholder="Create a password" required>
+                    <p class="invalidpassword">Values must be filled</p>
+                </div>
+                <div class="namediv">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <!-- <label for="confirm" class="confirmpasswordlabel">Confirm password</label> -->
+                    <input id="confirm" type="password" class="confirmpasswordinput" placeholder="Confirm your password" required>
+                    <p class="invalidconfirmpassword">Values must be filled</p>
+                </div>
+                <button class="signupbutton">Sign up</button>
+            </form>
+            <p class="login">Already have an Account? <a href="https://dharanidharans-9mzl75r7-8443.zcodecorp.in/HTML_CSS_DHARANIDHARAN/JS%20project/login.html" class="link">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

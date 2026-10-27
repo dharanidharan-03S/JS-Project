@@ -1,0 +1,601 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #0f0f0f;
+    height: 100vh;
+    width: 100vw;
+    /* position: relative; */
+}
+.navbar{
+    height: 70px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.iconcontainer{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    width: 75%;
+    align-items: center;
+    margin-right: 20px;
+}
+.notecount{
+    color: #c8f135;
+    font-size:20px;
+    padding-left: 40px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.username{
+    color: #c8f135;
+    font-size:20px;
+    padding-left: 40px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.count{
+    color: #c8f135;
+    padding-left: 40px;
+    /* padding-top: 10px; */
+    font-family: "Google Sans Flex", sans-serif;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.iconbackground1,.iconbackground2,.iconbackground3,.iconbackground4{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    padding-top: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+.backgroundcolor{
+    background-color: #25291C;
+}
+.uppercase,.lowercase,.italic,.bold{
+    color: white;
+    font-size: 18px;
+}
+.theme{
+    height:50px;
+    width: 50px;
+    border: 1px solid grey;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.sun{
+    font-size: 20px;
+}
+.app{
+    display: flex;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    background-color: rgb(24, 24, 24);
+    flex-shrink: 0;
+    border-right: 1px solid grey;
+    height: 82vh;
+}
+.sidebartop{
+    padding: 16px;
+    border-bottom: 1px solid grey;
+}
+.newbutton{
+    width: 100%;
+    background-color: #c8f135;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.newbutton:hover{
+    opacity: 0.8;
+}
+.notes{
+    font-size: 20px;
+}
+.searchnotes{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: rgb(33, 33, 33);
+    color:white;
+}
+.searchnotes:focus{
+    border:1px solid #c8f135;
+}
+.noteslist{
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+}
+.notescontainer{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding: 40px 16px;
+    font-size: 13px;
+    color: grey;
+    font-style: italic;
+}
+.startdisplay{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: grey;
+}
+.noteicon{
+    font-size: 30px;
+}
+.selectnote{
+    font-style: italic;
+    font-family: 'DM Sans', sans-serif;
+}
+.detail{
+    font-family: 'DM Sans', sans-serif;
+}
+.editor{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.editortop{
+    display: flex;
+    padding: 20px 28px 12px;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    gap: 12px;
+}
+.titleinput{
+    font-size: 40px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+    color:grey;
+    font-family: 'Playfair Display', serif;
+    flex: 1;
+}
+.saveindicator{
+    color: grey;
+    font-family: 'DM Sans', sans-serif;
+}
+.typing{
+    color: #c8f135;
+    font-size: 18px;
+}
+.date{
+    padding: 8px 28px;
+    border-bottom: 1px solid grey;
+    color: grey;
+    font-family: 'DM Sans', sans-serif;
+    white-space:pre;
+}
+.notebody{
+    overflow: hidden;
+    flex: 1;
+}
+.notes{
+    height: 90%;
+    width: 100%;
+    resize: none;
+    padding: 24px 28px;
+    border: none;
+    background: none;
+    color: grey;
+    outline: none;
+}
+.wordcount{
+    height: 10%;
+    color: grey;
+    padding: 15px 28px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.hiddenclass{
+    display: none;
+}
+.title1{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #c8f135;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.title2{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.noteitem{
+    background-color: #25291C;
+    border: 1px solid #c8f135;
+    padding: 12px 14px;
+    margin-bottom: 4px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.backgroundnone{
+    padding: 12px 14px;
+    margin-bottom: 4px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.backgroundnone:hover{
+    background-color: #212121;
+}
+.preview{
+    font-size: 12px;
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.dateofcreation{
+    margin-top: 4px;
+    font-size: 10px;
+    color: grey;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.deletebutton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: grey;
+    display: none;
+    height: 25px;
+    width: 25px;
+}
+.noteitem:hover .deletebutton{
+    display: block;
+}
+.deletebutton:hover{
+    color: red;
+    background-color: #3C3022;
+}
+.hiddenclass{
+    display: none;
+}
+.bottomcontainer{
+    margin: 0 auto;
+    width: 720px;
+    padding-top: 20px;
+}
+.bottomhead{
+    color: white;
+}
+.bottompara{
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+.italicstyle{
+    font-style: italic;
+}
+.boldstyle{
+    font-weight: 900;
+}
+.recent,.yesterday,.older{
+    height: 40px;
+    width: 100%;
+    border: 4px solid #c8f135;
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    border-radius: 12px;
+    font-size: 25px;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.groupingcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.allbutton,.yesterdaybutton,.olderbutton{
+    background: none;
+    border: none;
+    height: 30px;
+    width: 70px;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.noneclass{
+    display: none;
+}
+
+.buttonbackground{
+    background-color: #25291C;
+    border: 1px solid #c8f135;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.logout{
+    height: 50px;
+    width: 50px;
+    background-color: #25291C;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.logouticon{
+    color: white;
+    font-size: 30px;
+    
+}
+.logoutpopup{
+    position: absolute;
+    height: 35%;
+    width: 20%;
+    border: 4px solid #c8f135;
+    border-radius: 12px;
+    padding: 30px;
+    bottom: 500px;
+    left: 1200px;
+    background-color: #080606ff;
+    display:none;
+}
+.logoutpopup h2{
+    text-align: center;
+    color: #c8f135;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 30px;
+
+}
+.confirmation{
+    font-family: "Google Sans Flex", sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.logoutbuttoncontainer{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.cancelbutton,.logoutbutton{
+    height: 45px;
+    width: 40%;
+    background: none;
+    border: 1px solid #c8f135;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logoutbutton{
+    background-color: #c8f135;
+}
+
+body.light-theme{
+    background-color: #f5f5f5;
+}
+
+.light-theme .navbar {
+    background-color: #ffffff;
+    border-bottom-color: #d0d0d0;
+}
+
+.light-theme .notecount,
+.light-theme .count {
+    color: #526b00;
+}
+
+.light-theme .uppercase,
+.light-theme .lowercase,
+.light-theme .italic,
+.light-theme .bold {
+    color: #333333;
+}
+
+.light-theme .theme {
+    background-color: #252525;
+    color: #ffffff;
+    border-color: #cccccc;
+}
+
+.light-theme .sidebar {
+    background-color: #ffffff;
+    border-right-color: #d0d0d0;
+}
+
+.light-theme .sidebartop {
+    border-bottom-color: #d0d0d0;
+}
+
+.light-theme .newbutton {
+    background-color: #c8f135;
+    color: #222222;
+}
+
+.light-theme .searchnotes {
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.light-theme .searchnotes::placeholder {
+    color: #777777;
+}
+
+.light-theme .searchnotes:focus {
+    border: 1px solid #829f16;
+}
+
+.light-theme .notescontainer {
+    color: #777777;
+}
+
+.light-theme .startdisplay {
+    color: #777777;
+}
+
+.light-theme .editor {
+    background-color: #ffffff;
+}
+
+.light-theme .editortop,
+.light-theme .date {
+    border-bottom-color: #d0d0d0;
+}
+
+.light-theme .titleinput {
+    color: #333333;
+}
+
+.light-theme .saveindicator {
+    color: #666666;
+}
+
+.light-theme .typing {
+    color: #526b00;
+}
+
+.light-theme .date {
+    color: #666666;
+}
+
+.light-theme .notes {
+    color: #333333;
+}
+
+.light-theme .wordcount {
+    color: #666666;
+    border-top-color: #d0d0d0;
+    border-bottom-color: #d0d0d0;
+}
+
+.light-theme .title1 {
+    color: #526b00;
+}
+
+.light-theme .title2 {
+    color: #333333;
+}
+
+.light-theme .noteitem {
+    background-color: #edf5d6;
+    border-color: #829f16;
+}
+
+.light-theme .backgroundnone:hover {
+    background-color: #eeeeee;
+}
+
+.light-theme .preview,
+.light-theme .dateofcreation {
+    color: #777777;
+}
+
+.light-theme .deletebutton {
+    color: #666666;
+}
+
+.light-theme .deletebutton:hover {
+    color: #d00000;
+    background-color: #f8e1e1;
+}
+
+.light-theme .bottomhead {
+    color: #222222;
+}
+
+.light-theme .bottompara {
+    color: #666666;
+}
+
+.light-theme .iconbackground1:hover,
+.light-theme .iconbackground2:hover,
+.light-theme .iconbackground3:hover,
+.light-theme .iconbackground4:hover {
+    background-color: #eeeeee;
+}
+
+.light-theme .allbutton,
+.light-theme .yesterdaybutton,
+.light-theme .olderbutton{
+    color: black;
+}
+
+.light-theme .buttonbackground{
+    background-color: #edf5d6;
+    border-color: #829f16;
+}
+.light-theme .backgroundcolor{
+    background-color: #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

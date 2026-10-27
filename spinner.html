@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+    <link href="spinner.css" rel="stylesheet"></link>
+    <script src="spinner.js" defer></script>
+    <script src="https://kit.fontawesome.com/646be5f4dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sparklecontainer"></div>
+    <nav class="topnav">Spin Pick</nav>
+    <div class="page">
+        <div class="wheelside">
+            <div class="wheelcontainer">
+            </div>
+            <i class="fa-solid fa-circle-play playbutton" onclick="spinWheel()"></i>
+            <i class="fa-solid fa-caret-left triangle"></i>
+            <div class="result">
+                <div class="resultlabel"></div>
+                <div class="resulttext"></div>
+            </div>
+            <button class="spinbutton">Spin the Wheel</button>
+        </div>
+        <div class="optionside">
+            <div class="head">
+                <div class="optiontitle">Options</div>
+                <div class="countofoption">3 options</div>
+            </div>
+            <div class="addrow">
+                <input class="rowinput" placeholder="Add an option" maxlength=8>
+                <button class="plusbutton">+</button>
+            </div>
+            <div class="optionlist">
+            </div>
+            <div class="presetrow">
+                <span class="presets">Presets</span>
+                <button class="options">options</button>
+                <button class="yesorno">Yes/no</button>
+                <button class="daysofweak">Days of week</button>
+                <button class="lunchideas">Lunch ideas</button>
+                <button class="onetosix">1-6</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popupheader">Your pick is here</div>
+        <div class="popupbody">
+            <h2 class="winningoption">THE WINNING OPTION</h2> 
+            <div class="winnercontainer">
+                <p class="winnername"></p>
+            </div>
+            <div class="popupactions">
+                <button class="closebutton">Close</button>
+                <button class="removebutton">Remove</button>
+            </div>
+        </div>
+    </div>
+   <footer class="bottomcontainer">
+        <p class="bottompara">&copy; 2026 Spin pick.All rights reserved</p>
+    </footer>
+</body>
+</html>
